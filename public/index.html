@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <script>
+        tailwind.config = {
+            safelist: [
+                "bg-red-600",
+                "bg-red-900",
+                "text-white",
+                "text-gray-400",
+                "text-gray-700",
+                "rounded-full",
+                "p-8",
+                "mx-auto",
+                "max-w-4xl",
+                "max-w-7xl",
+                "md:text-8xl",
+                "text-6xl",
+                "text-lg",
+                "md:text-2xl",
+                "flex",
+                "grid",
+                "border",
+                "border-gray-700",
+                "border-gray-800",
+                "bg-black/40"
+            ]
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examly - Intelligent Study Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="gradient-bg antialiased selection:bg-red-500 selection:text-white">
+    
+    <header class="relative min-h-screen flex flex-col items-center justify-center text-center p-4 overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-red-600 rounded-full mix-blend-screen filter blur-[128px] opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-screen filter blur-[128px] opacity-10"></div>
+
+        <div class="z-10 max-w-4xl mx-auto">
+            <div class="hero-element transform-style-3d">
+                <h1 class="text-6xl md:text-8xl font-black uppercase tracking-tight hero-text-glow mb-2">
+                    Examly<span class="text-[var(--primary-red)]">.</span>
+                </h1>
+            </div>
+            
+            <p class="hero-element text-lg md:text-2xl mt-6 text-[var(--text-dim)] font-light leading-relaxed max-w-2xl mx-auto">
+                Your automated academic arsenal. <br>
+                <span class="text-white font-medium">Notes, PYQs, and Question Banks</span> delivered instantly.
+            </p>
+            
+            <div class="hero-element mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="#subjects" class="cta-button bg-[var(--primary-red)] text-white font-bold py-4 px-10 rounded-full text-lg">
+                    Explore Subjects
+                </a>
+                <a href="contact.html" class="text-[var(--text-dim)] hover:text-white transition-colors flex items-center gap-2">
+                    Get in touch <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-20">
+        <section id="features" class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="section-title text-4xl md:text-5xl font-bold">Why Examly?</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card glass-card p-8 rounded-2xl hover:border-red-500/30 transition-colors duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-red-600 to-red-900 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-red-900/20">
+                        <i data-lucide="database" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Centralized Database</h3>
+                    <p class="text-[var(--text-dim)] text-sm leading-relaxed">Stop scavenging through WhatsApp groups. Access curated PYQs, Notes, and Banks in one unified dashboard.</p>
+                </div>
+
+                <div class="feature-card glass-card p-8 rounded-2xl hover:border-red-500/30 transition-colors duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-red-600 to-red-900 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-red-900/20">
+                        <i data-lucide="zap" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Zero Latency</h3>
+                    <p class="text-[var(--text-dim)] text-sm leading-relaxed">Time is grades. Direct Google Drive integrations ensure you get your PDFs the moment you click.</p>
+                </div>
+
+                <div class="feature-card glass-card p-8 rounded-2xl hover:border-red-500/30 transition-colors duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-red-600 to-red-900 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-red-900/20">
+                        <i data-lucide="layout" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Modern Interface</h3>
+                    <p class="text-[var(--text-dim)] text-sm leading-relaxed">Clean, distraction-free, and built for night-before-exam study sessions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="subjects" class="container mx-auto px-6 mt-32 relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="section-title text-4xl md:text-5xl font-bold">Curriculum</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                <div class="subject-card glass-card p-8 rounded-2xl cursor-pointer group relative overflow-hidden" data-subject="math">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i data-lucide="sigma" class="w-24 h-24"></i>
+                    </div>
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform duration-300">🧮</div>
+                    <h3 class="text-2xl font-bold mb-2">Mathematics III</h3>
+                    <p class="text-sm text-[var(--text-dim)]">Complex variables & Transform calculus</p>
+                    <div class="mt-6 flex gap-2">
+                        <span class="px-3 py-1 text-xs rounded-full border border-gray-700 text-gray-400">PYQ</span>
+                        <span class="px-3 py-1 text-xs rounded-full border border-gray-700 text-gray-400">Notes</span>
+                    </div>
+                </div>
+
+                <div class="subject-card glass-card p-8 rounded-2xl cursor-pointer group relative overflow-hidden" data-subject="python">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i data-lucide="code-2" class="w-24 h-24"></i>
+                    </div>
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform duration-300">🐍</div>
+                    <h3 class="text-2xl font-bold mb-2">Python</h3>
+                    <p class="text-sm text-[var(--text-dim)]">Core programming & Data Structures</p>
+                    <div class="mt-6 flex gap-2">
+                        <span class="px-3 py-1 text-xs rounded-full border border-gray-700 text-gray-400">PYQ</span>
+                        <span class="px-3 py-1 text-xs rounded-full border border-gray-700 text-gray-400">Notes</span>
+                    </div>
+                </div>
+
+                <div class="subject-card glass-card p-8 rounded-2xl cursor-pointer group relative overflow-hidden" data-subject="dsa">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i data-lucide="binary" class="w-24 h-24"></i>
+                    </div>
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform duration-300">💻</div>
+                    <h3 class="text-2xl font-bold mb-2">DSA</h3>
+                    <p class="text-sm text-[var(--text-dim)]">Algorithms & Logic Building</p>
+                    <div class="mt-6 flex gap-2">
+                        <span class="px-3 py-1 text-xs rounded-full border border-gray-700 text-gray-400">PYQ</span>
+                        <span class="px-3 py-1 text-xs rounded-full border border-gray-700 text-gray-400">Notes</span>
+                    </div>
+                </div>
+
+                <div class="subject-card glass-card p-8 rounded-2xl cursor-pointer group relative overflow-hidden" data-subject="deld">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i data-lucide="cpu" class="w-24 h-24"></i>
+                    </div>
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform duration-300">🔌</div>
+                    <h3 class="text-2xl font-bold mb-2">DELD</h3>
+                    <p class="text-sm text-[var(--text-dim)]">Digital Logic & Electronics</p>
+                    <div class="mt-6 flex gap-2">
+                        <span class="px-3 py-1 text-xs rounded-full border border-gray-700 text-gray-400">PYQ</span>
+                        <span class="px-3 py-1 text-xs rounded-full border border-gray-700 text-gray-400">Notes</span>
+                    </div>
+                </div>
+
+                <div class="subject-card glass-card p-8 rounded-2xl cursor-pointer group relative overflow-hidden" data-subject="os">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i data-lucide="app-window" class="w-24 h-24"></i>
+                    </div>
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform duration-300">💿</div>
+                    <h3 class="text-2xl font-bold mb-2">Operating System</h3>
+                    <p class="text-sm text-[var(--text-dim)]">Process management & Scheduling</p>
+                    <div class="mt-6 flex gap-2">
+                        <span class="px-3 py-1 text-xs rounded-full border border-gray-700 text-gray-400">PYQ</span>
+                        <span class="px-3 py-1 text-xs rounded-full border border-gray-700 text-gray-400">Notes</span>
+                    </div>
+                </div>
+
+                <div class="border border-dashed border-gray-800 rounded-2xl flex flex-col items-center justify-center p-8 opacity-50 hover:opacity-100 transition-opacity">
+                    <i data-lucide="hammer" class="w-8 h-8 mb-3"></i>
+                    <span class="text-sm font-mono">More semesters under construction</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container mx-auto px-6 mt-32 mb-24 relative z-10">
+    <div class="glass-card max-w-5xl mx-auto p-10 md:p-16 rounded-3xl flex flex-col md:flex-row items-center gap-12 border border-red-900/30">
+        
+        <div class="relative about-element flex-shrink-0">
+            <div class="absolute inset-0 bg-red-600 blur-[50px] opacity-20 rounded-full animate-pulse"></div>
+            
+            <img src="image.jpeg" alt="Aadarsh mishra" 
+                 class="animate-float relative w-48 h-48 md:w-56 md:h-56 rounded-full border-2 border-[var(--primary-red)] object-cover shadow-[0_0_30px_rgba(229,9,20,0.3)] z-10">
+                 
+            <div class="absolute inset-[-10px] border border-red-500/20 rounded-full w-[calc(100%+20px)] h-[calc(100%+20px)] animate-[spin_10s_linear_infinite]"></div>
+        </div>
+
+        <div class="text-center md:text-left flex-1 about-element">
+            <h6 class="text-[var(--primary-red)] font-bold uppercase tracking-[0.2em] text-sm mb-3">The Developer</h6>
+            <h3 class="text-4xl md:text-5xl font-black mb-6 text-white">Aadarsh Mishra</h3>
+            <p class="text-[var(--text-dim)] text-lg leading-relaxed mb-10 max-w-2xl">
+                I built Examly to solve a simple problem: academic resources shouldn't be hard to find. 
+                Designed with <span class="text-white font-semibold">focus</span> and <span class="text-white font-semibold">speed</span> in mind, this platform serves as a hub for our semester needs.
+            </p>
+            
+            <a href="contact.html" class="btn-cyber group">
+                <span>Connect with me</span>
+                <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"></i>
+            </a>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <div id="viewer-modal" class="modal-overlay fixed inset-0 z-50 hidden flex items-center justify-center p-4 opacity-0">
+        <div id="modal-content" class="bg-[#111] border border-gray-800 rounded-2xl p-8 max-w-lg w-full shadow-2xl transform scale-90">
+            <div class="flex justify-between items-center mb-8">
+                <h2 id="modal-title" class="text-2xl font-bold text-white">Subject</h2>
+                <button id="close-modal" class="p-2 hover:bg-gray-800 rounded-full transition-colors"><i data-lucide="x" class="w-6 h-6"></i></button>
+            </div>
+            <div id="modal-links" class="space-y-3">
+                </div>
+        </div>
+    </div>
+
+    <footer class="py-12 text-center border-t border-gray-900 mt-24 relative z-10 bg-black/40">
+        <div class="flex justify-center gap-8 mb-6">
+            <a href="index.html" class="text-gray-500 hover:text-white transition-colors">Home</a>
+            <a href="contact.html" class="text-gray-500 hover:text-white transition-colors">Contact</a>
+        </div>
+        <p class="text-gray-700 text-sm">&copy; 2025 Examly. Crafted by Aadarsh Mishra.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
