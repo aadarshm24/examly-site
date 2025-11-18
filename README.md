@@ -32,16 +32,18 @@ Get **Notes, PYQs, and Question Banks** instantly — beautifully organized.
 - Vercel (deployment)
 
 ---
+## 📂 Project Structure
 
-## 📂 Project Structure  
-
+```text
 public/
-│── index.html
-│── contact.html
-│── style.css
-│── script.js
-│── image.jpeg
+├── index.html
+├── contact.html
+├── style.css
+├── script.js
+├── image.jpeg
 └── vercel.json
+
+```
 
 ---
 
