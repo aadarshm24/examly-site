@@ -43,7 +43,6 @@ public/
 │── image.jpeg
 └── vercel.json
 
-
 ---
 
 ## 👨‍💻 Developer  
