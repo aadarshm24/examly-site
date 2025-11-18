@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.png" alt="Examly Banner" width="100%">
+  <img src="Examly.png" alt="Examly Banner" width="100%">
 </p>
 
 # 📚 Examly — Your automated academic arsenal. 
