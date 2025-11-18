@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.png" alt="Examly Banner" width="100%">
+</p>
+
 # 📚 Examly — Your automated academic arsenal. 
 A minimal, aesthetic, and fast academic hub built for engineering students.  
 Get **Notes, PYQs, and Question Banks** instantly — beautifully organized.
