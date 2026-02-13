@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examly - Curriculum</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        hand: ['Reenie Beanie', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased selection:bg-gray-500 selection:text-white transition-colors duration-300">
+
+    <nav class="sticky top-0 z-50 backdrop-blur-md border-b nav-container transition-colors duration-300">
+        <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center font-bold text-xl transition-transform group-hover:scale-105 logo-box">
+                    E<span class="text-red-500">.</span>
+                </div>
+                <span class="text-xl font-bold tracking-tight heading-text">Examly</span>
+            </a>
+            
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="text-sm font-medium muted-text hover:heading-text transition-colors">Change Sem</a>
+                <button id="theme-toggle" class="p-2 rounded-full hover-bg-card transition-colors muted-text hover:text-current">
+                    <i data-lucide="moon" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="min-h-screen py-12">
+        <div class="container mx-auto px-6">
+            
+            <div class="flex items-end justify-between mb-12 border-b section-border pb-6">
+                <div>
+                    <h2 class="text-4xl font-bold mb-2 heading-text">Curriculum</h2>
+                    <p class="text-sm muted-text">Access your study materials below.</p>
+                </div>
+                <div id="current-sem-badge" class="nav-badge">
+                    <span id="current-sem-text">Loading...</span>
+                </div>
+            </div>
+
+            <div id="subject-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                 </div>
+            
+            <div class="mt-16 text-center">
+                <a href="index.html" class="inline-flex items-center gap-2 text-sm muted-text hover:heading-text transition-colors">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Home
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-10 border-t section-border mt-auto bg-page transition-colors duration-300">
+        <div class="container mx-auto px-6 text-center text-sm muted-text">
+            &copy; 2026 Examly. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
