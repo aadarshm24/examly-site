@@ -4,6 +4,7 @@
 const semesterData = {
   sem3: {
     name: "Semester 3",
+    syllabus: "https://sem3-syllabus-link.com",
     subjects: {
       math3: {
         name: "Mathematics III",
@@ -54,6 +55,8 @@ const semesterData = {
   },
   sem4: {
     name: "Semester 4",
+    syllabus:
+      "https://drive.google.com/drive/folders/1zd4vlwONcH9LVRowDTkfz2HJOeLiXzHy?usp=drive_link",
     subjects: {
       daa: {
         name: "DAA",
@@ -232,6 +235,40 @@ window.selectSemesterAndRedirect = (sem) => {
 // --- 7. LOAD SUBJECTS ---
 function loadSubjects(semKey) {
   const data = semesterData[semKey];
+  // --- Load Syllabus Box ---
+  const syllabusContainer = document.getElementById("syllabus-box");
+
+  if (syllabusContainer && data.syllabus) {
+    syllabusContainer.innerHTML = `
+    <div class="notes-card p-8 flex flex-col justify-between border section-border relative overflow-hidden">
+        
+        <div>
+            <div class="flex items-start justify-between mb-6">
+                <div class="p-3 bg-page rounded-lg border section-border muted-text">
+                    <i data-lucide="book-open" class="w-8 h-8"></i>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-2 heading-text">
+                ${data.name} Syllabus
+            </h3>
+
+            <p class="text-sm muted-text mb-6 leading-relaxed">
+                Access the complete official syllabus for this semester.
+            </p>
+        </div>
+
+        <a href="${data.syllabus}"
+           target="_blank"
+           class="btn-primary px-6 py-3 text-sm flex items-center justify-center gap-2 w-full">
+            <i data-lucide="book" class="w-4 h-4"></i>
+            View Syllabus
+        </a>
+    </div>
+  `;
+
+    lucide.createIcons();
+  }
   if (!data) return;
 
   const badgeText = document.getElementById("current-sem-text");
