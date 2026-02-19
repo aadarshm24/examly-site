@@ -98,9 +98,9 @@ const semesterData = {
         icon: "sigma",
         desc: "Discrete Structures",
         notes:
-          "https://drive.google.com/drive/folders/1J0V5jgaP_-V-CitFJ_-i-5PN74s9LWkb?usp=drive_link",
-        pyq: "https://drive.google.com/drive/folders/188zGHJHO4NII0sEOTg0cV3PF0Ti46rH2?usp=drive_link",
-        qb: "https://drive.google.com/drive/folders/1BV1zpsRRCIOttP_hz_foDfWnp82wOuRa?usp=drive_link",
+          "https://drive.google.com/drive/folders/1lQeLd4he8Dk-4RSqPRvexRpnRrhjkNX5?usp=drive_link",
+        pyq: "https://drive.google.com/drive/folders/1HzP219YfLYXTovh-O2BHaghoK27g9wGP?usp=drive_link",
+        qb: "https://drive.google.com/drive/folders/1CSRDKGcXF2VP-ifkNWPm_oIrqBWq5f7i?usp=drive_link",
       },
     },
   },
