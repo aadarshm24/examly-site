@@ -81,7 +81,7 @@ const semesterData = {
         icon: "coffee",
         desc: "Object-Oriented Programming",
         notes:
-          "https://drive.google.com/drive/folders/1b_2t9OCcWlLx-L45MCnwo-cSZt2hiKDh?usp=drive_link",
+          "https://drive.google.com/drive/folders/1v5AlT5oI9d_zu1doaNFcpvB2wIGgS7Gz?usp=drive_link",
         pyq: "https://drive.google.com/drive/folders/1XXt61Gwore_xu_iMRVp3m6Y2QwsJSFwn?usp=drive_link",
         qb: "https://drive.google.com/drive/folders/1b_2t9OCcWlLx-L45MCnwo-cSZt2hiKDh?usp=drive_link",
       },
