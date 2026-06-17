@@ -375,7 +375,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const path = window.location.pathname;
   // Simple check if we are on the semester page
-  const isSemesterPage = path.includes("semester.html");
+  const isSemesterPage = path.includes("semester");
 
   if (isSemesterPage) {
     const savedSem = localStorage.getItem("examly_semester");
