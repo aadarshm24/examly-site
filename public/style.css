@@ -111,5 +111,17 @@ body {
     backdrop-filter: blur(8px);
 }
 
+
+.scheme-card-active {
+    border-color: var(--text-heading) !important;
+    background-color: var(--bg-card-hover) !important;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="light"] .scheme-card-active {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
 /* Light Mode: Invert Image */
 [data-theme="light"] .light-invert { filter: invert(1); opacity: 0.8; }
