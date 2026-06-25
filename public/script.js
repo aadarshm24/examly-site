@@ -230,8 +230,8 @@ const semesterData = {
             icon: "globe",
             desc: "Indian Constitution & Culture (NEP)",
             notes:
-              "https://drive.google.com/drive/folders/1fDGEeYrrb67nl9cN_opZrESUpOKa-U9Z?usp=drive_link",
-            pyq: "https://drive.google.com/drive/folders/1H30nlb4Mw1Wiy_bNlNb-inzZRrLwvf_p?usp=drive_link",
+              "https://drive.google.com/drive/folders/1J1yAPwX6fFi29Pqr_2Lklozd1_opPSB5?usp=drive_link",
+            pyq: "https://drive.google.com/drive/folders/1Fagx0SJ-tJFDJ1VOGUEbVYbHM_t-99TD?usp=drive_link",
             qb: "https://drive.google.com/drive/folders/1y8f8PWhwHdxAzy1H9Izdl4i_7khjyEjR?usp=drive_link",
           },
         },
