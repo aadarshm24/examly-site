@@ -178,7 +178,7 @@ const semesterData = {
       nep: {
         name: "NEP Scheme",
         syllabus:
-          "https://drive.google.com/drive/folders/1zd4vlwONcH9LVRowDTkfz2HJOeLiXzHy?usp=drive_link",
+          "https://drive.google.com/drive/folders/1lCVrN9TMtUwcgGTgmqj2_mNPH9EZ573E?usp=drive_link",
         subjects: {
           physics: {
             name: "PHYSICS",
